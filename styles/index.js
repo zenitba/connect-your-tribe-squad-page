@@ -14,7 +14,7 @@ app.use(express.static('public'))
 app.get('/', (request, response) => {
   console.log(request.query.squad)
 
-  let slug = request.query.squad || 'squad-a-2022'
+  let slug = request.query.squad || 'squad-c-2022'
   let orderBy = request.query.orderBy || 'name'
   let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC'
 
