@@ -1,0 +1,280 @@
+:root{
+    --spotify:#147636;
+    --white:#ffffff;
+    --bg:#000000;
+    --hover:#b3b3b3;
+    --bg1:#121212;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: var(--bg1);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* side navigation */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: var(--bg);
+    padding: 24px;
+  }
+  .sidebar .logo img {
+    width: 200px;
+  }
+  .sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  .sidebar .navigation ul li {
+    padding: 20px 0px;
+  }
+  .sidebar .navigation ul li a {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .sidebar .navigation ul li a:hover,
+  .sidebar .navigation ul li a:active,
+  .sidebar .navigation ul li a:focus {
+    color: var(--white);
+  }
+  .sidebar .navigation ul li a:hover .fa,
+  .sidebar .navigation ul li a:active .fa,
+  .sidebar .navigation ul li a:focus .fa {
+    color: var(--white);
+  }
+  .sidebar .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .sidebar .navigation ul li a:hover .fa:hover,
+  .sidebar .navigation ul li a:hover .fa:active,
+  .sidebar .navigation ul li a:hover .fa:focus {
+    color: var(--white);
+  }
+  .sidebar .policies {
+    position: absolute;
+    bottom: 50px;
+  }
+  .sidebar .policies ul {
+    list-style: none;
+  }
+  .sidebar .policies ul li {
+    padding-bottom: 5px;
+  }
+  .sidebar .policies ul li a {
+    color: var(--hover);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  .sidebar .policies ul li a:hover,
+  .sidebar .policies ul li a:active,
+  .sidebar .policies ul li a:focus {
+    text-decoration: underline;
+  }
+
+  .main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+  }
+    /* top navigation */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg1);
+    padding: 14px 30px;
+    border-bottom: 1.5px solid var(--spotify);
+}
+  .topbar .prev-next-buttons button {
+    color: var(--hover);
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: var(--bg);
+    margin-right: 10px;
+  }
+  .topbar .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .topbar .navbar ul {
+    list-style: none; 
+  }
+  .topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+  }
+  .topbar .navbar ul li a {
+    color: var(--hover);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .topbar .navbar ul li a:hover,
+  .topbar .navbar ul li a:active,
+  .topbar .navbar ul li a:focus {
+    color: var(--white);
+    font-size: 15px;
+  }
+  .topbar .navbar ul li.divider {
+    color: var(--white);
+    font-size: 26px;
+    margin: 0px 20px;
+    width: auto;
+  }
+  .topbar .navbar button {
+    background-color: var(--white);
+    color: var(--bg);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .topbar .navbar button:hover,
+  .topbar .navbar button:active,
+  .topbar .navbar button:focus {
+    background-color: var(--white);
+  }
+    /* Members */
+  h1 {
+    color: var(--white);
+    margin-top: 30px;
+    margin-bottom: 110px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  a {
+    color: var(--white);
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 400;
+    justify-content: center;
+    padding-top: 50px;}
+  
+  h2 {
+    color: var(--white);
+    margin-bottom: 0.18em;
+  }
+  
+  .team-section {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .team-section .nickname {
+    font-weight: 20rem;
+    color: var(--spotify);
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+  
+  .team-section .gitHubHandle {
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--white);
+  }
+  
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 7.5em 3.75em;
+  }
+
+.fa-play-circle{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: var(--spotify);
+    font-size: 45px;
+  }
+    /* avatars+img */
+  .avatar {
+    padding: 6.25em 1.8em 1.8em 1.8em;
+
+    border-radius: 0.8em;
+    box-shadow: 0.3em 0.3em 1.4em var(--spotify);
+    position: relative;
+    text-align: center;
+    background-color: var(--bg);
+  }
+  
+  .avatar .img{
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0.3em 0.3em 1.1em var(--spotify);
+  }
+  
+  .avatar .img img {
+    width: 100%;
+    height: auto;
+  }
+  /* Responsive media query's */
+  @media screen and (max-width: 1200px) {
+      .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-gap: 20px;
+          justify-content: space-evenly;
+      }
+      .avatar .img {
+        position: absolute;
+        width: 6em;
+        height: 6em;
+      }
+      .avatar .img img {
+        width: 100%;
+        height: 100%;
+      }
+      .topbar .prev-next-buttons button {
+        display: none;
+      }
+      h1{
+        font-size: 1.5em;
+        }
+    .sidebar .logo img {
+            width: 130px;
+          }
+    .sidebar {
+            width: 120px;
+            
+        }
+  }
+
+@media screen and (max-width: 1200px) {
+    .h1{
+    font-size: small;
+    }
+}

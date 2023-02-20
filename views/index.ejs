@@ -1,114 +1,114 @@
-<%- include('./partials/head.ejs') %>
+<%- include('./partials/head') %>
 
+<main>
 <div class="sidebar">
     <div class="logo">
-        <a href="#">
-            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
-        </a>
+      <a href="#">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+      </a>
     </div>
 
     <div class="navigation">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="fa fa-home"></span>
-                    <span>Home</span>
-                </a>
-            </li>
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
 
-            <li>
-                <a href="#">
-                    <span class="fa fa-search"></span>
-                    <span>Search</span>
-                </a>
-            </li>
+        <li>
+          <a href="#">
+            <span class="fa fa-search"></span>
+            <span>Search</span>
+          </a>
+        </li>
 
-            <li>
-                <a href="#">
-                    <span class="fa fas fa-book"></span>
-                    <span>Your Library</span>
-                </a>
-            </li>
-        </ul>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-book"></span>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div class="navigation">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="fa fas fa-plus-square"></span>
-                    <span>Create Artist</span>
-                </a>
-            </li>
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-plus-square"></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
 
-            <li>
-                <a href="#">
-                    <span class="fa fas fa-heart"></span>
-                    <span>Liked Songs</span>
-                </a>
-            </li>
-        </ul>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-heart"></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
     </div>
-
     <div class="policies">
         <ul>
-            <li>
-                <a href="#">Cookies</a>
-            </li>
-            <li>
-                <a href="#">Privacy</a>
-            </li>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
         </ul>
-    </div>
-</div>
-
-<div class="main-container">
-    <div class="topbar">
-        <div class="prev-next-buttons">
+      </div>
+   </div>
+  
+    <div class="main-container">
+        <div class="topbar">
+          <div class="prev-next-buttons">
             <button type="button" class="fa fas fa-chevron-left"></button>
             <button type="button" class="fa fas fa-chevron-right"></button>
-        </div>
-
-        <div class="navbar">
-            <ul>
-                <li>
-                    <a href="#">Premium</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
-                <li>
-                    <a href="#">Download</a>
-                </li>
-                <li class="divider">|</li>
-                <li>
-                    <a href="#">Sign Up</a>
-                </li>
-            </ul>
-            <button type="button">Log In</button>
-        </div>
-    </div>
-
-    <div class="spotify-playlists">
-        <h2>MEET THE ARTIST FROM <%= squad.name %></h2>
-
-        <% squad.members.forEach(member => { %>
-
-        <div class="list">
-            <div class="item">
-              <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" /> 
-                <div class="play"> 
-                    <span class="fa fa-play"></span>
-                </div>
-                <% if (member.avatar) { %>
-                    <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
-                    <% }else{ %>
-                    <img src="/placeholder.jpg" alt="Placeholder avatar" />
-                    <% } %>
-                    <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
-                </a>
-            </div>
-        <hr>
-    </div>
+          </div>
     
-    <%- include('./partials/foot.ejs') %>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="#">Premium</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Download</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a href="#">Sign Up</a>
+          </li>
+        </ul>
+        <button type="button">Log In</button>
+      </div>
+    </div>
+
+<article class="team-section">
+    <h1>MEET THE ARTIST FROM <%= squad.name %></h1>
+        <section class="container">
+          <% squad.members.forEach(member => { %>
+          <main class="avatar">
+            <div class="img">
+               <% if (member.avatar) { %>
+              <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+               <% }else{ %>
+                <img src="/placeholder.jpg" alt="Placeholder avatar" />
+                <% } %>
+            </div>
+            <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+            <p class="nickname"><%= member.nickname %></p> 
+            <a href="<%= member.website %>"><i class="fa fa-play-circle"></i></a>
+
+          </main>
+          <% }) %>
+        </section>
+  <script
+  src="https://kit.fontawesome.com/23cecef777.js"
+  crossorigin="anonymous"></script>
+<%- include('./partials/footer') %>

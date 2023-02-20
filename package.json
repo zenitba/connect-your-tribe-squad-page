@@ -1,19 +1,19 @@
 {
-   "name": "connect-your-tribe-squad-page",
-   "version": "1.0.0",
-   "description": "Redesign met je squad een squadpagina op basis van een bestaande API.",
-   "main": "index.js",
-   "type": "module",
-   "directories": {
-     "doc": "docs"
-   },
-   "scripts": {
-     "start": "node index.js",
-     "test": "echo \"Error: no test specified\" && exit 1"
+    "name": "connect-your-tribe-squad-page",
+    "version": "1.0.0",
+    "description": "Redesign met je squad een squadpagina op basis van een bestaande API.",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "start": "node index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/zenitba/connect-your-tribe-squad-page.gits"
+      "url": "git+https://github.com/zenitba/connect-your-tribe-squad-page.git"
     },
     "keywords": [
       "node",
