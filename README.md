@@ -1,32 +1,43 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Squad C Playlist <img width="45" alt="Schermafbeelding 2023-03-21 om 11 31 48" src="https://user-images.githubusercontent.com/112856019/226580806-c3491e29-1d10-4a52-bd9a-44963ab95f2b.png">
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+
+
+<img width="539" alt="Schermafbeelding 2023-03-21 om 11 26 45" src="https://user-images.githubusercontent.com/112856019/226579627-da16edb7-573d-45bc-accd-75d1da72d00a.png">
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
+  * [Beschrijving📋](#beschrijving)
+  * [Kenmerken👩🏽‍💻](#kenmerken)
+  * [Installatie🧗‍♀️](#installatie)
+  * [Gebruik🖥️](#gebruik)
+  * [Bronnen🌐](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## Beschrijving📋
+Het doel van de leertaak was om een nieuwe squad page te gaan designen, de bedoeling was dat je ging kijken naar de verschillende filters die je kan maken en hoe die zouden werken voor de gebruiker. Na het designen van de squad page was het de bedoeling dat je de squad page ging maken door middel van NodeJS en restAPI. In Node hebben wij gebruik gemaakt van Express.
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+## Kenmerken👩🏽‍💻
 
-## Installatie
-<!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+### Bij het maken van deze opdracht heb ik gebruik gemaakt van:
+* 🔌Node
+* 📟Ejs
+* 📡Express
+* 🗂Vini Mini API
+* 📟 HTML
+* 🎨 CSS
 
-## Gebruik
 
-## Bronnen
+**Tools**
+* 🖥️ VS Code
 
+## Installatie🧗‍♀️
+Voor het maken van de squad page heb ik vooral gebruik gemaakt van NodeJS en een API. Ik heb door middel van NodeJS en Express studenten opgehaald uit een JSON bestand van de API. Voor de rest heb ik HTML, CSS en JS gebruikt om een spotify pagina na te maken. 
+
+
+## Gebruik🖥️
+Alle members van FDND en leraren staan erin als artiesten.
+## Bronnen🌐
+>https://whois.fdnd.nl
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
