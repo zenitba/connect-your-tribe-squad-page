@@ -22,7 +22,7 @@ Het doel van de leertaak was om een nieuwe squad page te gaan designen, de bedoe
 * 🔌Node
 * 📟Ejs
 * 📡Express
-* 🗂Vini Mini API
+* 🗂Squad API
 * 📟 HTML
 * 🎨 CSS
 
