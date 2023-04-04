@@ -1,9 +1,10 @@
 <%- include('./partials/head') %>
 
-
+  <!-- geeft een error aan????
     <a href="/?squad=<%= squad.slug %>&orderBy=name" class="order-by-name"
       >Sorteer op voornaam</a
     >
+    -->
 
 
  <article class="team-section">
@@ -15,6 +16,7 @@
                 <% if (member.avatar) { %>
                     <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
                      <% }else{ %>
+                 <!-- Als de gebruiker geen avatar heeft komt hier een placeholder ervoor in de plaats -->
                       <img src="/placeholder.jpg" alt="Placeholder avatar" />
                       <% } %>
                   </div>
