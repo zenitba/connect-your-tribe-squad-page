@@ -244,7 +244,12 @@
     height: auto;
 
   }
-
+  .order-by-name {
+    text-decoration: underline;
+    color: var(--spotify);
+    font-size: 1.8em;
+    font-weight: 600;
+  }
 
   /* Responsive media query's */
   @media screen and (max-width: 1200px) {
