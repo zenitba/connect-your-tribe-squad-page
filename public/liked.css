@@ -207,7 +207,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 7.5em 3.75em;
   }
-  .fa-play-circle{
+
+.fa-play-circle{
     position: absolute;
     bottom: 8px;
     right: 16px;
@@ -215,7 +216,7 @@
     font-size: 45px;
    
   }
- 
+  
     /* avatars+img */
   .avatar {
     padding: 6.25em 1.8em 1.8em 1.8em;
@@ -242,10 +243,7 @@
   .avatar .img img {
     width: 100%;
     height: auto;
-
   }
-
-
   /* Responsive media query's */
   @media screen and (max-width: 1200px) {
       .container {
