@@ -14,18 +14,15 @@ app.use(express.static('public'))
 app.get('/', (request, response) => {
   console.log(request.query.squad)
 
-  let slug = request.query.squad || 'squat-C-2022'
-  let orderBy = request.query.orderBy || 'surname'
+  let slug = request.query.squad || 'squat-c-2022'
+  let orderBy = request.query.orderBy || 'name'
   let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC'
 
   fetchJson(squadUrl).then((data) => {
     response.render('index', data)
-  }) 
+  })
 })
 
-// app.get('/members', (request, response) => {
-//   response.send('Joepie!!')
-// })
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)

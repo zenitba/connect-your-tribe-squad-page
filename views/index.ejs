@@ -1,13 +1,12 @@
 <%- include('./partials/head') %>
 
-    <a href="/?squad=&orderBy=name" class="order-by-name"
-      >Sorteer op voornaam</a
-    >
-    
+<a href="/?squad=<%= squad.slug %>&orderBy=name" class="order-by-name"
+  >Sorteer op voornaam</a
+>
 
 
- <article class="team-section">
-    <h1>MEET THE ARTIST</h1>
+<article class="team-section">
+<h1>MEET THE ARTIST FROM <%= squad.name %></h1>
         <section class="container">
           <% squad.members.forEach(member => { %>
           <main class="avatar">
