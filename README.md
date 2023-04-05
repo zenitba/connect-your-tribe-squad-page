@@ -35,7 +35,7 @@ Voor het maken van de squad page heb ik vooral gebruik gemaakt van NodeJS en een
 
 
 ## Gebruik🖥️
-Alle members van FDND en leraren staan erin als artiesten.
+Een FDND spotify playlist met alle member van 2022/2023 klik op een artiest en bekijk hun playlist.
 ## Bronnen🌐
 >https://whois.fdnd.nl
 ## Licentie
